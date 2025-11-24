@@ -82,7 +82,7 @@ export const CaptainCard = ({
               draggable="false"
             />
             {/* Rarity Badge */}
-            <div className="absolute top-2 right-2 px-2 py-1 rounded-md bg-background/80 backdrop-blur-sm">
+            <div className="absolute top-3 right-3 px-2 py-1 rounded-md bg-background/80 backdrop-blur-sm z-20">
               <span className={cn(
                 'text-xs font-bold uppercase',
                 `text-rarity-${captain.rarity}`
@@ -93,7 +93,7 @@ export const CaptainCard = ({
           </div>
 
           {/* Card Info */}
-          <div className="p-4 h-2/5 flex flex-col justify-between">
+          <div className="p-5 h-2/5 flex flex-col justify-between gap-3">
             <div>
               <h3 className="text-lg font-bold text-foreground mb-1 truncate">
                 {captain.name}
@@ -104,7 +104,7 @@ export const CaptainCard = ({
             </div>
             
             {/* Power Level Indicator */}
-            <div className="flex items-center justify-center bg-muted rounded-lg p-3">
+            <div className="flex items-center justify-center bg-muted rounded-lg p-4 min-h-[56px]">
               <div className="text-center">
                 <div className="text-xs text-muted-foreground">Power Level</div>
                 <div className="text-lg font-bold text-primary">
@@ -115,7 +115,7 @@ export const CaptainCard = ({
           </div>
 
           {/* Hover Hint */}
-          <div className="absolute bottom-1 left-0 right-0 text-center text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+          <div className="absolute bottom-2 left-0 right-0 text-center text-xs text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
             Click to flip
           </div>
         </div>
