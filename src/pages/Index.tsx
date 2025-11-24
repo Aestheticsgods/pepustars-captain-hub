@@ -61,22 +61,22 @@ const Index = () => {
                 </div>
                 
                 <div className="flex flex-col sm:flex-row gap-6 pt-8">
-                <Button 
-                  size="lg" 
-                  className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-foreground font-bold px-8 py-4 text-lg rounded-xl shadow-[0_0_30px_hsl(var(--primary)/0.5)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-glow"
-                >
-                  🔗 Connect Wallet to Begin
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-bold px-8 py-4 text-lg rounded-xl shadow-[0_0_20px_hsl(var(--accent)/0.3)] hover:shadow-[0_0_40px_hsl(var(--accent)/0.6)] transition-all duration-300"
-                  onClick={() => window.open('https://t.me/+nN2Y8C994ZI5OWNk', '_blank')}
-                >
-                  📱 Join Telegram
-                </Button>
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-foreground font-bold px-8 py-4 text-lg rounded-xl shadow-[0_0_30px_hsl(var(--primary)/0.5)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-glow"
+                  >
+                    🔗 Connect Wallet to Begin
+                  </Button>
+                  <Button 
+                    size="lg" 
+                    variant="outline"
+                    className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-bold px-8 py-4 text-lg rounded-xl shadow-[0_0_20px_hsl(var(--accent)/0.3)] hover:shadow-[0_0_40px_hsl(var(--accent)/0.6)] transition-all duration-300"
+                    onClick={() => window.open('https://t.me/+nN2Y8C994ZI5OWNk', '_blank')}
+                  >
+                    📱 Join Telegram
+                  </Button>
+                </div>
               </div>
-            </div>
 
               {/* Right: Captain Image */}
               <div className="flex items-center justify-center lg:justify-end">
