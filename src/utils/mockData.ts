@@ -33,7 +33,7 @@ const generateRandomStats = (rarity: Rarity) => {
 const getCharacterImage = (index: number) => {
   // Alternate between the two images
   if (index % 2 === 0) {
-    return '/WhatsApp Image 2025-11-17 at 03.24.43_1cc76b0d.jpg';
+    return '/captain-frog.jpg';
   } else {
     return '/WhatsApp Image 2025-11-17 at 03.24.43_e2cb42d2.jpg';
   }
