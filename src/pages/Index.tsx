@@ -31,19 +31,8 @@ const Index = () => {
         
         <main className="flex-1 flex items-center justify-center p-4 relative">
           <div className="space-y-12 max-w-6xl w-full">
-            {/* Hero Section with Captain Image */}
+            {/* Hero Section */}
             <div className="flex flex-col items-center justify-center gap-12">
-              {/* Captain Image Pill */}
-              <div className="relative w-full max-w-2xl">
-                <div className="rounded-full border-2 border-primary/50 overflow-hidden bg-gradient-to-r from-primary/20 to-secondary/20 backdrop-blur-sm p-3 shadow-[0_0_60px_hsl(var(--primary)/0.3)]">
-                  <img 
-                    src="https://images.unsplash.com/photo-1579546565269-cf6d6cb50e20?w=600&h=600&fit=crop" 
-                    alt="Captain" 
-                    className="w-full h-auto object-cover rounded-full"
-                  />
-                </div>
-              </div>
-
               {/* Text Content */}
               <div className="space-y-6 text-center">
                 <div className="space-y-4">
