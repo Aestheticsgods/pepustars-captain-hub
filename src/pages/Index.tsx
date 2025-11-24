@@ -56,7 +56,7 @@ const Index = () => {
                           src={'/captain-frog.jpg'}
                           alt="Captain"
                           draggable={false}
-                          className="ml-4 w-12 h-12 md:w-16 md:h-16 object-cover rounded-full ring-2 ring-accent/60"
+                          className="ml-6 w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-cover rounded-full ring-4 ring-accent/60 shadow-lg"
                         />
                       </h1>
                       <div className="bg-red-500 text-white px-3 py-1 rounded-lg font-bold text-sm md:text-lg drop-shadow-lg">
