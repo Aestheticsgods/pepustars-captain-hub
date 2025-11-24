@@ -48,17 +48,21 @@ const Index = () => {
               <div className="space-y-6 text-center">
                 <div className="space-y-4">
                   <div className="mb-8">
-                    <div className="flex items-center justify-center gap-4 mb-4">
-                      <h1 className="text-6xl md:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight flex items-center">
-                        PepuStars
-                        {/* Captain image next to title (now using URL-safe name in public/) */}
-                        <img
-                          src={'/captain-frog.jpg'}
-                          alt="Captain"
-                          draggable={false}
-                          className="ml-6 w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-cover rounded-full ring-4 ring-accent/60 shadow-lg"
-                        />
-                      </h1>
+                    <div className="flex items-center justify-center gap-6 mb-4 w-full">
+                      <div className="flex items-center justify-center md:justify-start gap-4 whitespace-nowrap">
+                        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight">
+                          PepuStars
+                        </h1>
+                        {/* Captain image placed to the right of the title as a sibling (not inline emoji) */}
+                        <div className="ml-4 flex-shrink-0">
+                          <img
+                            src={'/captain-frog.jpg'}
+                            alt="Captain"
+                            draggable={false}
+                            className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-cover rounded-full ring-4 ring-accent/60 shadow-lg"
+                          />
+                        </div>
+                      </div>
                       <div className="bg-red-500 text-white px-3 py-1 rounded-lg font-bold text-sm md:text-lg drop-shadow-lg">
                         BETA
                       </div>
