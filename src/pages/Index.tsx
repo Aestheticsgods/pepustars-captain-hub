@@ -30,35 +30,37 @@ const Index = () => {
         <Header />
         
         <main className="flex-1 flex items-center justify-center p-4 relative">
-          <div className="text-center space-y-12 max-w-6xl w-full">
-            {/* Hero Section */}
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <div className="mb-8">
-                  <div className="flex items-center justify-center gap-4 mb-4">
-                    <h1 className="text-6xl md:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight">
-                      PepuStars
-                    </h1>
-                    <div className="bg-red-500 text-white px-3 py-1 rounded-lg font-bold text-sm md:text-lg drop-shadow-lg">
-                      BETA
+          <div className="space-y-12 max-w-7xl w-full">
+            {/* Hero Section with Captain Image */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left: Text Content */}
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <div className="mb-8">
+                    <div className="flex items-center gap-4 mb-4">
+                      <h1 className="text-6xl md:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight">
+                        PepuStars
+                      </h1>
+                      <div className="bg-red-500 text-white px-3 py-1 rounded-lg font-bold text-sm md:text-lg drop-shadow-lg">
+                        BETA
+                      </div>
                     </div>
+                    <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
+                      The Stars Are Lost.{' '}
+                      <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
+                        Legends Must Rise
+                      </span>
+                    </h2>
                   </div>
-                  <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
-                    The Stars Are Lost.{' '}
-                    <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
-                      Legends Must Rise
-                    </span>
-                  </h2>
+                  <p className="text-xl md:text-2xl font-bold text-foreground/90 leading-relaxed">
+                    A cosmic rift has torn through the Pepu Kingdom, scattering its stars across the universe. Only 10,000 living PepuStars remain—rare, on-chain NFTs you can collect, battle, and evolve.
+                  </p>
+                  <p className="text-lg text-muted-foreground">
+                    Collect, battle, and evolve your PepuStars & PepuStars Captains. On-chain gameplay with progression, tournaments, and seasonal updates.
+                  </p>
                 </div>
-                <p className="text-xl md:text-2xl font-bold text-foreground/90 max-w-4xl mx-auto leading-relaxed">
-                  A cosmic rift has torn through the Pepu Kingdom, scattering its stars across the universe. Only 10,000 living PepuStars remain—rare, on-chain NFTs you can collect, battle, and evolve.
-                </p>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Collect, battle, and evolve your PepuStars & PepuStars Captains. On-chain gameplay with progression, tournaments, and seasonal updates.
-                </p>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-6 items-center justify-center pt-8">
+                
+                <div className="flex flex-col sm:flex-row gap-6 pt-8">
                 <Button 
                   size="lg" 
                   className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-foreground font-bold px-8 py-4 text-lg rounded-xl shadow-[0_0_30px_hsl(var(--primary)/0.5)] hover:shadow-[0_0_50px_hsl(var(--primary)/0.8)] transition-all duration-300 animate-pulse-glow"
@@ -76,6 +78,23 @@ const Index = () => {
               </div>
             </div>
 
+              {/* Right: Captain Image */}
+              <div className="flex items-center justify-center lg:justify-end">
+                <div className="relative w-full max-w-md">
+                  {/* Glow effect background */}
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary/40 to-secondary/40 blur-3xl opacity-60"></div>
+                  
+                  {/* Image container with border */}
+                  <div className="relative rounded-3xl border-2 border-primary/50 overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 backdrop-blur-sm p-4 shadow-[0_0_60px_hsl(var(--primary)/0.4)]">
+                    <img 
+                      src="/captain-hero.png" 
+                      alt="Captain" 
+                      className="w-full h-auto object-cover rounded-2xl"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
             {/* Feature Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
               <div className="group p-8 rounded-2xl border-2 border-primary/30 bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm hover:border-primary/60 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)]">
