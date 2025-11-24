@@ -48,7 +48,7 @@ export const CaptainCard = ({
     <div
       className={cn(
         'group relative w-full aspect-[2/3] cursor-pointer transition-all duration-300',
-        'hover:scale-105 hover:-translate-y-2',
+        'hover:scale-105 hover:-translate-y-2 user-select-none',
         isInHand && 'animate-card-draw',
         className
       )}
@@ -74,11 +74,12 @@ export const CaptainCard = ({
           )}
         >
           {/* Card Image */}
-          <div className="relative h-3/5 overflow-hidden">
+          <div className="relative h-3/5 overflow-hidden pointer-events-none select-none">
             <img
               src={captain.image}
               alt={captain.name}
               className="w-full h-full object-cover"
+              draggable="false"
             />
             {/* Rarity Badge */}
             <div className="absolute top-2 right-2 px-2 py-1 rounded-md bg-background/80 backdrop-blur-sm">

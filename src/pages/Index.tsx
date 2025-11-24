@@ -35,9 +35,14 @@ const Index = () => {
             <div className="space-y-6">
               <div className="space-y-4">
                 <div className="mb-8">
-                  <h1 className="text-6xl md:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight mb-4">
-                    PepuStars
-                  </h1>
+                  <div className="flex items-center justify-center gap-4 mb-4">
+                    <h1 className="text-6xl md:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight">
+                      PepuStars
+                    </h1>
+                    <div className="bg-red-500 text-white px-3 py-1 rounded-lg font-bold text-sm md:text-lg drop-shadow-lg">
+                      BETA
+                    </div>
+                  </div>
                   <h2 className="text-3xl md:text-5xl font-bold text-foreground leading-tight">
                     The Stars Are Lost.{' '}
                     <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-shimmer bg-[length:200%_auto]">
@@ -49,7 +54,7 @@ const Index = () => {
                   A cosmic rift has torn through the Pepu Kingdom, scattering its stars across the universe. Only 10,000 living PepuStars remain—rare, on-chain NFTs you can collect, battle, and evolve.
                 </p>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Guided by the Captain, your quest is to reclaim the lost stars and restore balance to the realm.
+                  Collect, battle, and evolve your PepuStars & PepuStars Captains. On-chain gameplay with progression, tournaments, and seasonal updates.
                 </p>
               </div>
               
