@@ -49,8 +49,15 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="mb-8">
                     <div className="flex items-center justify-center gap-4 mb-4">
-                      <h1 className="text-6xl md:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight">
+                      <h1 className="text-6xl md:text-8xl font-black text-accent drop-shadow-[0_0_30px_hsl(var(--accent))] animate-fade-in leading-tight flex items-center">
                         PepuStars
+                        {/* Captain image next to title (uses encoded public path to handle spaces) */}
+                        <img
+                          src={'/WhatsApp%20Image%202025-11-17%20at%2003.24.43_1cc76b0d.jpg'}
+                          alt="Captain"
+                          draggable={false}
+                          className="ml-4 w-12 h-12 md:w-16 md:h-16 object-cover rounded-full ring-2 ring-accent/60"
+                        />
                       </h1>
                       <div className="bg-red-500 text-white px-3 py-1 rounded-lg font-bold text-sm md:text-lg drop-shadow-lg">
                         BETA
