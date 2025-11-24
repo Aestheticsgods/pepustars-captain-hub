@@ -92,7 +92,7 @@ export const CaptainCard = ({
           </div>
 
           {/* Card Info */}
-          <div className="p-3 h-2/5 flex flex-col justify-between">
+          <div className="p-4 h-2/5 flex flex-col justify-between">
             <div>
               <h3 className="text-lg font-bold text-foreground mb-1 truncate">
                 {captain.name}
@@ -103,7 +103,7 @@ export const CaptainCard = ({
             </div>
             
             {/* Power Level Indicator */}
-            <div className="flex items-center justify-center bg-muted rounded-lg p-2">
+            <div className="flex items-center justify-center bg-muted rounded-lg p-3">
               <div className="text-center">
                 <div className="text-xs text-muted-foreground">Power Level</div>
                 <div className="text-lg font-bold text-primary">
@@ -127,14 +127,14 @@ export const CaptainCard = ({
             'bg-card border-2',
             rarityBorderClasses[captain.rarity],
             rarityGlowClasses[captain.rarity],
-            'p-3 flex flex-col'
+            'p-4 flex flex-col'
           )}
         >
-          <h3 className="text-lg font-bold text-foreground mb-3 text-center truncate">
+          <h3 className="text-lg font-bold text-foreground mb-4 text-center truncate">
             {captain.name}
           </h3>
           
-          <div className="flex-1 space-y-2 min-h-0">
+          <div className="flex-1 space-y-2.5 min-h-0 overflow-y-auto">
             {Object.entries(captain.stats).map(([stat, value]) => (
               <div key={stat} className="flex items-center justify-between gap-2">
                 <span className="text-xs text-muted-foreground capitalize min-w-0 flex-shrink-0">
@@ -155,7 +155,7 @@ export const CaptainCard = ({
             ))}
           </div>
 
-          <div className="mt-2 text-center text-xs text-muted-foreground">
+          <div className="mt-3 text-center text-xs text-muted-foreground">
             Click to flip back
           </div>
         </div>

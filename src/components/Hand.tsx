@@ -9,7 +9,7 @@ export const Hand = () => {
     return (
       <div className="w-full p-8 rounded-lg border-2 border-dashed border-border bg-card/50">
         <p className="text-center text-muted-foreground">
-          Your hand is empty. Select cards from your deck above to draw them into your hand.
+          Your hand is empty. Select cards from your deck below to draw them into your hand.
         </p>
       </div>
     );

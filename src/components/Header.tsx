@@ -45,7 +45,7 @@ export const Header = () => {
 
         {/* Wallet Connection */}
         <ConnectButton 
-          chainStatus="icon"
+          chainStatus="none"
           showBalance={false}
           accountStatus="avatar"
         />
